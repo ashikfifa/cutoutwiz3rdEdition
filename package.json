@@ -1,0 +1,90 @@
+{
+  "name": "cutoutwiz",
+  "homepage": "https://cutoutwiz.com",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/react-router-dom": "^5.1.8",
+    "bootstrap": "^5.1.1",
+    "browser-history": "^1.0.1",
+    "customisable-contact-form": "^1.0.0",
+    "email-js": "^2.0.2",
+    "emailjs-com": "^3.2.0",
+    "hash-router": "^0.4.0",
+    "jquery": "^3.6.0",
+    "jquery-slim": "^3.0.0",
+    "mdbreact": "^5.2.0",
+    "pure-react-carousel": "^1.27.8",
+    "react": "^16.0.0",
+    "react-before-after-slider": "^1.0.4",
+    "react-bootstrap": "^2.0.3",
+    "react-bootstrap-validation": "^0.1.11",
+    "react-browser-router": "^2.1.2",
+    "react-card-slide": "^1.0.13",
+    "react-dom": "^16.0.0",
+    "react-gtm-module": "^2.0.11",
+    "react-helmet": "^6.1.0",
+    "react-language-selector": "^1.1.0",
+    "react-multi-carousel": "^2.6.5",
+    "react-player": "^2.9.0",
+    "react-pricing-table": "^0.3.0",
+    "react-responsive-carousel": "^3.2.22",
+    "react-router-dom": "^5.4.0",
+    "react-router-sitemap": "^1.2.0",
+    "react-router-sitemap-generator": "^0.0.8",
+    "react-scripts": "4.0.3",
+    "react-show-more-button": "^1.0.0",
+    "react-show-more-text": "^1.5.2",
+    "react-simple-card": "^2.0.2",
+    "react-slick": "^0.28.1",
+    "react-social-icons": "^5.6.1",
+    "react-switch-lang": "^1.0.2",
+    "react-testimonial": "^1.0.0",
+    "react-typical": "^0.1.3",
+    "react-typist": "^2.0.5",
+    "slick-carousel": "^1.8.1",
+    "trailing-slash": "^2.0.2",
+    "useref": "^1.4.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sitemap": "babel-node ./sitemap-builder.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^6.2.0",
+    "react-video-thumbnail-image": "^0.1.7"
+  }
+}
