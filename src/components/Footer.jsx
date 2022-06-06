@@ -24,7 +24,7 @@ function Footer() {
         <p style={{color:"#b7b9bb",marginTop:"8%"}}>
         Home <br/>
         Features<br/>
-        Services<br/>
+        Service<br/>
         Pricing<br/>
         Blogs
         </p>
