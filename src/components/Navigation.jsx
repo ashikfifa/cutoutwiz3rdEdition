@@ -3,14 +3,22 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link, withRouter } from "react-router-dom";
 
 function Navigation(props) {
+
+  function refreshPage(){
+    window.location.reload('/');
+}
   return (
 
 
     <Navbar collapseOnSelect sticky='top' expand='sm' bg='dark' variant='dark'>
     <Container>
+
+    <div class="" onClick={refreshPage}>
     <Link class="navbar-brand" to="/">
       <img src="../../assets/images/ailogo.png" width="170" height="40" alt=""/>
     </Link>
+    </div>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -26,12 +34,12 @@ function Navigation(props) {
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="mx-auto"></div>
         <ul class="navbar-nav">
-        <li class="nav-item active">
-                <Link class="nav-link" to="/">
+        <li class="nav-item active" onClick={refreshPage}>
+                <Link class="nav-link"  to="/">
                   HOME
                   <span class="sr-only">(current)</span>
                 </Link>
-              </li>
+        </li>
 
 
               {/* <li class="nav-item">

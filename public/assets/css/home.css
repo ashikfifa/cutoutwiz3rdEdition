@@ -4,23 +4,6 @@
 
 
 
-.FLAG {
-	margin: 1em;
-	height: 15px;
-	width: 20px;	
-	float: left;
-}
-
-.belgium {
-	background: -webkit-linear-gradient(left, #333 33%, #f8de1f 33%, #f8de1f 66%, #e51400 66%);
-	background: linear-gradient(to right, #333 33%, #f8de1f 33%, #f8de1f 66%, #e51400 66%);
-}
-.spain {
-	background: -webkit-linear-gradient(top, #e51400 25%, #f8de1f 25%, #f8de1f 75%, #e51400 75%);
-	background: linear-gradient(to bottom, #e51400 25%, #f8de1f 25%, #f8de1f 75%, #e51400 75%);
-} 
-
-
 .button-more{
   border: 1px solid;
   background-color: white;
