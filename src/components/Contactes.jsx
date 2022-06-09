@@ -4,28 +4,11 @@ import emailjs from "emailjs-com";
 import {Helmet} from "react-helmet";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigationes} from "./";
+const $ = window.$;
 // import Form from 'customisable-contact-form';
 // import {Heading, FirstName, LastName, Email, Message, SubmitButton} from 'customisable-contact-form'
 export default function Contactes() {
-   
-function randomDate( end) {
-return new Number(end + Math.random());
-}
-function sendEmail(e) {
-e.preventDefault();
 
-
-
-emailjs.sendForm('service_1zfatsb', 'template_0ciuxfr', e.target, 'user_3TcS4pRKMgpo7fArsKmSf')
-.then((result) => {
-console.log(result.text);
-window.location.href = "./thank-you/"+randomDate( new Number());
-}, (error) => {
-console.log(error.text);
-});
-e.target.reset();
-
-}
 return (
 
 
@@ -67,6 +50,12 @@ return (
 <div className="col-8 form-group pt-2 mx-auto">
 <textarea className="form-control" id="" cols="30" rows="8" placeholder="Tu Mensaje" name="message"required></textarea>
 </div>
+
+<div className="col-8 form-group pt-2 mx-auto" hidden>
+<textarea cols="30" rows="3" type="number" className="form-control" name="uniqueid" id="hello"/>
+</div>
+
+
 <div className="col-8 pt-3 mx-auto">
 <div class="text-center">
 <input type="submit" id="button-19" className="btn btn-info" value="ENTREGAR"></input>
@@ -86,3 +75,28 @@ return (
 );
 
 }
+
+function randomDate( end) {
+    return new Number(end + Math.random());
+}
+var p=randomDate( new Number());
+function sendEmail(e) {
+    e.preventDefault();
+    
+    emailjs.sendForm('service_1zfatsb', 'template_0ciuxfr', e.target, 'user_3TcS4pRKMgpo7fArsKmSf')
+    .then((result) => {
+    console.log(result.text);
+    window.location.href = "./thank-you/"+p;
+    }, (error) => {
+    console.log(error.text);
+    });
+    e.target.reset();
+    
+}
+
+function whatis(){
+    document.getElementById('hello').innerHTML = p;
+    }
+$( document ).ready(function() {
+    whatis();
+});
