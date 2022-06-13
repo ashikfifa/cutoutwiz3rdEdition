@@ -282,12 +282,12 @@ content post production solution</p>
     <div class="row">
       <div class="col-md-6">
       <video  height="100%" width="100%" controls="controls" poster="assets/images/subtittle.png"alt="subtittle-addition-service-poster"> <source src="assets/images/Subtitile_Addition_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Subtittle Addition Service</p>
+      <p style={{textAlign:"center"}}>Subtitle Addition Service</p>
       </div>
 
       <div class="col-md-6">
       <video  height="99.5%" width="100%" controls="controls" poster="assets/images/tittle.png"alt="tittle-addition-service-poster"> <source src="assets/images/Title_Addition_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Tittle Addition Service</p>
+      <p style={{textAlign:"center"}}>Title Addition Service</p>
       </div>
     </div>
 <br/><br/><br/><br/>

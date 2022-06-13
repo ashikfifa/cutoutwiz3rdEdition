@@ -410,7 +410,7 @@ than here. But remember you get what you pay but remember</p>
             <div class="price-circle">
             <span class="info" style={{paddingTop: "22%",fontSize: "14px",color: "black"}}>Desde</span>
               <span class="price-title" style={{marginTop: "-29%"}}>
-                <small>$</small><span>$1.19</span>
+                <small>$</small><span>1.19</span>
               </span>
               <span class="info" style={{marginTop: "-6%"}}>/imágenes</span>
             </div>

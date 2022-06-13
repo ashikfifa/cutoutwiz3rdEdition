@@ -79,7 +79,7 @@ import { Navigationth} from "./";
                   <a class="" href="https://app.cutoutwiz.com/"target="_blank"><button class="button1">ทดลองใช้ฟรี</button> </a></div>
                
                 <div class="col-6 col-md-8">
-                <Link to="/contact-us" ><button type="button" id="button2">เสนอราคาฟรี</button></Link>
+                <Link to="/th/contact-us" ><button type="button" id="button2">เสนอราคาฟรี</button></Link>
                 </div>
                 
                 </div>
@@ -175,7 +175,7 @@ import { Navigationth} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Photo Retouch</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>การรีทัชภาพ </p>
         </div>
 
       <div class="col-md-3">
@@ -185,7 +185,7 @@ import { Navigationth} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Background Removal</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>ลบพื้นหลังออกจากภาพ</p>
       </div>
 
       <div class="col-md-3">
@@ -195,7 +195,7 @@ import { Navigationth} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Photo Recolor</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>ชั้นวางภาพ</p>
       </div>
 
       <div class="col-md-3">
@@ -205,7 +205,7 @@ import { Navigationth} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Shadow Creation</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>การสร้างเงา </p>
       </div>
 
 
@@ -222,7 +222,7 @@ import { Navigationth} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Ghost Mannequin</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>หุ่นผี</p>
       </div>
 
       <div class="col-md-3">
@@ -232,7 +232,7 @@ import { Navigationth} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Color Correction</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>แก้ไขสีดำ </p>
       </div>
 
       <div class="col-md-3">
@@ -243,7 +243,7 @@ import { Navigationth} from "./";
           height={200}
           textAlign={"center"}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Image Masking</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>การปิดบังภาพ</p>
       </div>
       
       <div class="col-md-3">
@@ -253,7 +253,7 @@ import { Navigationth} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Image Manipulation</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>การจัดการภาพ</p>
       </div>
     </div>
     <br/><br/>
@@ -269,12 +269,12 @@ import { Navigationth} from "./";
     <div class="row"style={{marginTop:"-5%"}}>
       <div class="col-md-6">
       <video  height="100%" width="100%" controls="controls" poster="assets/images/Screenshot (7).png"alt="audio-editing-service-poster" style={{cursor:"pointer"}}> <source src="assets/images/Audio_Editing_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Audio Editing Service</p>
+      <p style={{textAlign:"center"}}>บริการตัดต่อเสียง </p>
       </div>
 
       <div class="col-md-6">
       <video  height="99.5%" width="100%" controls="controls" poster="assets/images/cropping.png"alt="video-cropping-service-poster"> <source src="assets/images/Video_Cropping_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Video Cropping Service</p>
+      <p style={{textAlign:"center"}}>บริการตัดต่อวิดีโอ </p>
       </div>
     </div>
     <br/>
@@ -282,12 +282,12 @@ import { Navigationth} from "./";
     <div class="row">
       <div class="col-md-6">
       <video  height="100%" width="100%" controls="controls" poster="assets/images/subtittle.png"alt="subtittle-addition-service-poster"> <source src="assets/images/Subtitile_Addition_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Subtittle Addition Service</p>
+      <p style={{textAlign:"center"}}>เพิ่มคำบรรยาย </p>
       </div>
 
       <div class="col-md-6">
       <video  height="99.5%" width="100%" controls="controls" poster="assets/images/tittle.png"alt="tittle-addition-service-poster"> <source src="assets/images/Title_Addition_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Tittle Addition Service</p>
+      <p style={{textAlign:"center"}}>การเพิ่มชื่อเรื่อง </p>
       </div>
     </div>
 <br/><br/><br/><br/>
@@ -515,7 +515,7 @@ than here. But remember you get what you pay.</p>
             </li>
           </ul>
           <div class="buy-button-box">
-            <Link to="/contact-us" target="_blank" class="buy-now">ORDER NOW</Link>
+            <Link to="/th/contact-us" target="_blank" class="buy-now">ORDER NOW</Link>
           </div>
         </div>
       </div>
@@ -569,7 +569,7 @@ than here. But remember you get what you pay.</p>
   <img src="assets/images/contact_front.jpg" height="350px" width="100%" id="gulabi"alt="People working in customer service"/>
   <div class="centered">
   <h2>เราอยู่ที่นี่เพื่อ<br/><span style={{fontWeight:"600"}}>ตอบทุกคำถามของคุณ</span><br/></h2>
-  <Link to="/contact-us"><button type="button" id="button17">ติดต่อเรา</button></Link>
+  <Link to="/th/contact-us"><button type="button" id="button17">ติดต่อเรา</button></Link>
   </div>
 </div> 
 
@@ -644,7 +644,7 @@ than here. But remember you get what you pay.</p>
           <p style={{color:"white",marginTop:"8%"}}>
          <Link to="/privacy-policy" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}>นโยบายความเป็นส่วนตัว </Link> <br/>
          <Link to="/terms-and-conditions" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}> ข้อกำหนดและเงื่อนไข</Link><br/>
-         <Link to="/contact-us" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}>ติดต่อเรา</Link> <br/>
+         <Link to="/th/contact-us" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}>ติดต่อเรา</Link> <br/>
           <a href="https://app.cutoutwiz.com/" target="_blank" style={{textDecoration:"none",color:"#b7b9bb"}}>สมัคร</a> <br/>
           </p>
         </div>     
