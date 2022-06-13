@@ -11,8 +11,6 @@ export default function Contactusfr() {
 
 return (
 
-
-
 <div className="containe">
 
 <Router >
@@ -76,7 +74,7 @@ return (
 
 }
 
-
+       
 function randomDate( end) {
       return new Number(end + Math.random());
   }
@@ -91,8 +89,7 @@ function randomDate( end) {
       }, (error) => {
       console.log(error.text);
       });
-      e.target.reset();
-      
+      e.target.reset(); 
   }
   
   function whatis(){

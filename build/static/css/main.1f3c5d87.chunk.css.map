@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACE,QAEF,CAEA,UAHE,qBAKF","file":"main.1f3c5d87.chunk.css","sourcesContent":["body {\r\n  margin: 0;\r\n  font-family: 'poppins';\r\n}\r\n\r\ncode {\r\n  font-family: 'poppins';\r\n}\r\n"]}

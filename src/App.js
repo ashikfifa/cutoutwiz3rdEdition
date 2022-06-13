@@ -19,6 +19,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Newyear from "./components/Newyear";
 import Productphotography from "./components/Productphotography";
 import Thankyou from "./components/Thankyou";
+import Thankyouth from "./components/Thankyouth";
 import Thankyoues from "./components/Thankyoues";
 import Thankyounl from "./components/Thankyounl";
 import Thankyoude from "./components/Thankyoude";
@@ -32,6 +33,7 @@ import Shoptalk from "./components/Shoptalk";
 import Shoptalk2 from "./components/Shoptalk2";
 import Shoptalk3 from "./components/Shoptalk3";
 import Spanish from "./components/Spanish";
+import Thai from "./components/Thai";
 import France from "./components/France";
 import Germany from "./components/Germany";
 import Netherland from "./components/Netherland";
@@ -39,6 +41,7 @@ import Contactusfr from "./components/Contactusfr";
 import Contactes from "./components/Contactes";
 import Contactge from "./components/Contactge";
 import Contactne from "./components/Contactne";
+import Contactth from "./components/Contactth";
 
 
 
@@ -76,6 +79,7 @@ function App() {
           <Route path="/nl/thank-you/*" exact component={() => <Thankyounl />} /> 
           <Route path="/de/thank-you/*" exact component={() => <Thankyoude />} /> 
           <Route path="/fr/thank-you/*" exact component={() => <Thankyoufr />} /> 
+          <Route path="/th/thank-you/*" exact component={() => <Thankyouth />} /> 
           <Route path="/all-blogs" exact component={() => <AllBlogs />} /> 
           <Route path="/demo-blog" exact component={() => <Demoblog />} /> 
           <Route path="/contacttest" exact component={() =><Contacttest />}/>
@@ -83,7 +87,8 @@ function App() {
           <Route path="/shoptalk_2022_a-complete-guide-for-attendees_test" exact component={() => <Shoptalk />} /> 
           <Route path="/shoptalk_2022_a-complete-guide-for-attendees" exact component={() => <Shoptalk2 />} /> 
           <Route path="/shoptalk_2022_a-complete-guide-for-attendees/confirmation" exact component={() => <Shoptalk3 />} /> 
-          <Route path="/es" exact component={() => <Spanish />} /> 
+          <Route path="/es" exact component={() => <Spanish />} />
+          <Route path="/th" exact component={() => <Thai />} />  
           <Route path="/fr" exact component={() => <France />} /> 
           <Route path="/de" exact component={() => <Germany />} /> 
           <Route path="/nl" exact component={() => <Netherland />} /> 
@@ -91,6 +96,7 @@ function App() {
           <Route path="/es/contact-us" exact component={() => <Contactes />} /> 
           <Route path="/de/contact-us" exact component={() => <Contactge />} />
           <Route path="/nl/contact-us" exact component={() => <Contactne />} />  
+          <Route path="/th/contact-us" exact component={() => <Contactth />} />  
           <Route path="" exact component={NotFound} />
         </Switch>
         {/* <Footer/> */}

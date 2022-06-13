@@ -14,9 +14,9 @@ import Slider from "react-slick";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Typical from 'react-typical';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigationne} from "./";
+import { Navigationth} from "./";
 
- function Netherland(props) {
+ function Thai(props) {
 
   
   const settings = {
@@ -46,7 +46,7 @@ import { Navigationne} from "./";
     
     <div className="home">
          <Router >
-      <Navigationne />
+      <Navigationth />
       </Router>
       <Helmet>
                 <title>CutOutWiz : Image and Video Post Production</title>
@@ -58,28 +58,28 @@ import { Navigationne} from "./";
       <div class="container">
           <div class="row">
 
-<div class="col-md-6"style={{marginTop:"8%"}}>
-                <p style={{fontSize:"34px",fontWeight:"500",fontFamily:"Poppins"}}>Dit doen we</p>
+            <div class="col-md-6"style={{marginTop:"8%"}}>
+                <p style={{fontSize:"34px",fontWeight:"500",fontFamily:"Poppins"}}>เราให้บริการ</p>
                 
-                 <p style={{fontSize:"38px",fontWeight:"700",marginTop:"-33px"}}>Image and video</p>
+                 <p style={{fontSize:"38px",fontWeight:"700",marginTop:"-33px"}}>Image and Video</p>
                 <p style={{fontSize:"38px",fontWeight:"700",marginTop:"-30px"}}>
                 <Typical
-                    steps={['Bewerken', 1000, 'Kleurcorrectie en recolor', 500, 'Retoucheren van beelden', 500, 'Automatisering', 500]}
+                    steps={['ปรับแต่ง', 1000, 'การแก้ไขสีและเปลี่ยนสี', 500, 'การรีทัชภาพ', 500, 'ระบบอัตโนมัติ', 500]}
                     loop={Infinity}
                     wrapper="p"
                 />               
                 </p>
 
                 <hr id="border2"></hr>
-                <p style={{fontWeight:"500",fontFamily:"Poppins"}}>Jouw oplossing<br/>
-                voor postproductie van inhoud</p>
+                <p style={{fontWeight:"500",fontFamily:"Poppins"}}>โซลูชันหลั<br/>
+                งการผลิตเนื้อหาของคุณ</p>
                 
                 <div class="row">
                   <div class="col-6 col-md-4">
-                  <a class="" href="https://app.cutoutwiz.com/"target="_blank"><button class="button1">GRAT PROEF</button> </a></div>
+                  <a class="" href="https://app.cutoutwiz.com/"target="_blank"><button class="button1">ทดลองใช้ฟรี</button> </a></div>
                
                 <div class="col-6 col-md-8">
-                <Link target="_blank" to="/nl/contact-us" ><button type="button" id="button2">GRATIS OFFERTE</button></Link>
+                <Link to="/contact-us" ><button type="button" id="button2">เสนอราคาฟรี</button></Link>
                 </div>
                 
                 </div>
@@ -103,7 +103,7 @@ import { Navigationne} from "./";
               <div class="card-body"style={{marginTop:"-3%"}}>
                 <h4 class="card-title">16,500+</h4>
                 <hr style={{width:"32%",border:"1px solid",backgroundColor:"black",opacity:"1",marginTop:"-1%"}}></hr>
-                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>Afbeelding<br/>Dagelijks verwerkt</p>
+                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>ภาพต่อวัน<br/>ประมวลผลภาพ</p>
               </div>
               </div>
           </div>
@@ -114,7 +114,7 @@ import { Navigationne} from "./";
               <div class="card-body"style={{marginTop:"-3%"}}>
                 <h4 class="card-title">500+</h4>
                 <hr style={{width:"32%",border:"1px solid",backgroundColor:"black",opacity:"1",marginTop:"-1%"}}></hr>
-                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>Team<br/>Leden</p>
+                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>ทีมงาน<br/>มากกว่า</p>
               </div>
               </div>
           </div>
@@ -123,9 +123,9 @@ import { Navigationne} from "./";
           <div class="card" style={{width: "100%",borderRadius:"10px"}}>
               <img src="assets/images/support.png"  width="30%" height="10%" alt="Support icon"/><br/>
               <div class="card-body"style={{marginTop:"-3%"}}id="text">
-                <h4 class="card-title">365 Dagen</h4>
+                <h4 class="card-title">365 วัน</h4>
                 <hr style={{width:"32%",border:"1px solid",backgroundColor:"black",opacity:"1",marginTop:"-1%"}}></hr>
-                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>Klant<br/>Steun
+                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>ลูกค้า<br/>บริการล
 </p>
               </div>
               </div>
@@ -135,9 +135,9 @@ import { Navigationne} from "./";
           <div class="card" style={{width: "100%",borderRadius:"10px"}}>
               <img src="assets/images/delivery.png"  width="30%" height="10%" alt="clock icon"/><br/>
               <div class="card-body"style={{marginTop:"-3%"}}>
-                <h4 class="card-title">12 Uren</h4>
+                <h4 class="card-title">12 ชั่วโมงห</h4>
                 <hr style={{width:"32%",border:"1px solid",backgroundColor:"black",opacity:"1",marginTop:"-1%"}}></hr>
-                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>Of Minder<br/>Levering Tijd</p>
+                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>รือน้อยกว่า<br/>เวลาจัดส่ง</p>
               </div>
               </div>
           </div>
@@ -149,12 +149,14 @@ import { Navigationne} from "./";
               <div class="card-body"style={{marginTop:"-3%"}}>
                 <h4 class="card-title">10+</h4>
                 <hr style={{width:"32%",border:"1px solid",backgroundColor:"black",opacity:"1",marginTop:"-1%"}}></hr>
-                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>Vrij<br/>Proces Beelden</p>
+                <p class="card-text"style={{marginTop:"-7%",fontWeight:"500"}}>ฟรี<br/>ภาพทดลอง</p>
               </div>
               </div>
               </div>
           </div>
-          </div></div></div>
+          </div>
+        </div>
+      </div>
 
 
 <div class="spacew">
@@ -162,8 +164,8 @@ import { Navigationne} from "./";
 </div>
 <br/>
 <div class="container" id="images">
-    <h1 style={{textAlign:"center",fontFamily:"poppins",fontWeight:"700"}}>Diensten</h1>
-    <p style={{textAlign:"center",fontFamily:"poppins",fontSize:"20px",fontWeight:"100"}}>Afbeelding Bewerken Diensten</p><br/><br/>
+    <h1 style={{textAlign:"center",fontFamily:"poppins",fontWeight:"700"}}>บริการ</h1>
+    <p style={{textAlign:"center",fontFamily:"poppins",fontSize:"20px",fontWeight:"100"}}>บริการแก้ไขภาพ</p><br/><br/>
 
     <div class="row"style={{marginTop:"-3%"}}>
       <div class="col-md-3">
@@ -173,7 +175,7 @@ import { Navigationne} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Foto Retoucheren</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>Photo Retouch</p>
         </div>
 
       <div class="col-md-3">
@@ -183,7 +185,7 @@ import { Navigationne} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Achtergrond Verwijdering</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>Background Removal</p>
       </div>
 
       <div class="col-md-3">
@@ -193,7 +195,7 @@ import { Navigationne} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Foto Opnieuw kleuren</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>Photo Recolor</p>
       </div>
 
       <div class="col-md-3">
@@ -203,7 +205,7 @@ import { Navigationne} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Schaduw creatie</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>Shadow Creation</p>
       </div>
 
 
@@ -220,7 +222,7 @@ import { Navigationne} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Spook Mannequin</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>Ghost Mannequin</p>
       </div>
 
       <div class="col-md-3">
@@ -230,7 +232,7 @@ import { Navigationne} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Kleur Correctie</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>Color Correction</p>
       </div>
 
       <div class="col-md-3">
@@ -241,7 +243,7 @@ import { Navigationne} from "./";
           height={200}
           textAlign={"center"}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Afbeelding Maskeren</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>Image Masking</p>
       </div>
       
       <div class="col-md-3">
@@ -251,7 +253,7 @@ import { Navigationne} from "./";
           width={260}
           height={200}
         />
-        <p style={{fontWeight:"700",textAlign:"center"}}>Afbeelding Manipulatie</p>
+        <p style={{fontWeight:"700",textAlign:"center"}}>Image Manipulation</p>
       </div>
     </div>
     <br/><br/>
@@ -260,19 +262,19 @@ import { Navigationne} from "./";
 <div style={{backgroundColor:"#f3f5f7"}}>
   <br/>
     <div class="container" id="videos">
-    <h1 style={{textAlign:"center",fontFamily:"poppins",fontWeight:"700"}}>Diensten</h1>
-    <p style={{textAlign:"center",fontFamily:"poppins",fontSize:"20px",fontWeight:"100"}}>Video Bewerken Diensten</p><br/><br/>
+    <h1 style={{textAlign:"center",fontFamily:"poppins",fontWeight:"700"}}>บริการ</h1>
+    <p style={{textAlign:"center",fontFamily:"poppins",fontSize:"20px",fontWeight:"100"}}>บริการตัดต่อวิดีโอ</p><br/><br/>
 
     
     <div class="row"style={{marginTop:"-5%"}}>
       <div class="col-md-6">
       <video  height="100%" width="100%" controls="controls" poster="assets/images/Screenshot (7).png"alt="audio-editing-service-poster" style={{cursor:"pointer"}}> <source src="assets/images/Audio_Editing_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Audio Bewerken Diensten</p>
+      <p style={{textAlign:"center"}}>Audio Editing Service</p>
       </div>
 
       <div class="col-md-6">
       <video  height="99.5%" width="100%" controls="controls" poster="assets/images/cropping.png"alt="video-cropping-service-poster"> <source src="assets/images/Video_Cropping_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Video Bijsnijden Diensten</p>
+      <p style={{textAlign:"center"}}>Video Cropping Service</p>
       </div>
     </div>
     <br/>
@@ -280,12 +282,12 @@ import { Navigationne} from "./";
     <div class="row">
       <div class="col-md-6">
       <video  height="100%" width="100%" controls="controls" poster="assets/images/subtittle.png"alt="subtittle-addition-service-poster"> <source src="assets/images/Subtitile_Addition_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Ondertitel Toevoeging Diensten</p>
+      <p style={{textAlign:"center"}}>Subtittle Addition Service</p>
       </div>
 
       <div class="col-md-6">
       <video  height="99.5%" width="100%" controls="controls" poster="assets/images/tittle.png"alt="tittle-addition-service-poster"> <source src="assets/images/Title_Addition_Service_1.mp4"></source></video>
-      <p style={{textAlign:"center"}}>Titel Toevoeging Diensten</p>
+      <p style={{textAlign:"center"}}>Tittle Addition Service</p>
       </div>
     </div>
 <br/><br/><br/><br/>
@@ -294,8 +296,8 @@ import { Navigationne} from "./";
    
 
   <div class="container"id="apps"style={{marginTop:"4%"}}>
-    <h1 style={{textAlign:"center",fontWeight:"500"}}>Apps En Integraties</h1><br/>
-    <p style={{textAlign:"center",marginTop:"-1%",fontSize:"20px"}}>Onze apps zijn opgenomen in de belangrijkste E-commerce platforms</p><br/><br/>
+    <h1 style={{textAlign:"center",fontWeight:"500"}}>แอพและการรวมเข้าด้วยกัน</h1><br/>
+    <p style={{textAlign:"center",marginTop:"-1%",fontSize:"20px"}}>แอพของเราอยู่บนแพลตฟอร์มอีคอมเมิร์ซที่สำคัญ</p><br/><br/>
 
     <div class="row">
 
@@ -395,21 +397,15 @@ than here. But remember you get what you pay.</p>
 
 
     <div class="container"id="prices"style={{marginBottom:"4%"}}>
-    <h1 style={{textAlign:"center",fontFamily:""}}>Kies jouw plan</h1>
-    <p style={{textAlign:"center",marginTop:"-1%",fontSize:"20px"}}>Onze pakketten zijn precies wat uw winkel nodig heeft</p><br/>
+    <h1 style={{textAlign:"center",fontFamily:""}}>เลือกแผนของคุณ</h1>
+    <p style={{textAlign:"center",marginTop:"-1%",fontSize:"20px"}}>แพ็คเกจของเราคือสิ่งที่ร้านค้าของคุณต้องการ</p><br/>
 
     <div class="row">
       <div class="col-md-4">
 
-      <h2 style={{fontWeight:"700",marginTop:"35%"}}>Bekijk onze prijzen</h2>
+      <h2 style={{fontWeight:"700",marginTop:"35%"}}> ค่าบริการ</h2>
 
-      <p style={{textAlign: "justify"}}>Wij bieden meerdere prijsopties om uit te kiezen
-         van dat zal u helpen uw doelen te bereiken.
-          Kies degene die aan uw eisen voldoet
-           perfect. Voor het geval u op zoek bent naar
-            iets anders, of wilt u een offerte van ons voor
-             elke vorm van maatwerk, stuur ons gerust!
-              een tekst via ons contactformulier.</p>
+      <p style={{textAlign: "justify"}}>เรามีหลายราคาให้คุณเลือกเพื่อช่วยให้งานของคุณบรรลุเป้าหมาย โดยที่คุณสามารถเลือกราคาที่ตรงตามความต้องการของคุณได้อย่างลงตัว หากคุณกำลังมองหาบริการอื่น หรือต้องการใบเสนอราคาจากเราสำหรับบริการพิเศษเฉพาะสำหรับธุรกิจของคุณ โปรดส่งข้อความมาหาเราผ่านแบบฟอร์มติดต่อเรา</p>
       
       </div>
       <div class="col-md-8">
@@ -418,13 +414,13 @@ than here. But remember you get what you pay.</p>
       <div class="column">
         <div class="pricing-card basic">
           <div class="pricing-header">
-            <span class="plan-title">BASIS PLAN</span>
+            <span class="plan-title">แบบพื้นฐาน</span>
             <div class="price-circle">
-            <span class="info" style={{paddingTop: "22%",fontSize: "14px",color: "black"}}>begint vanaf</span>
+            <span class="info" style={{paddingTop: "22%",fontSize: "14px",color: "black"}}>เริ่มต้น </span>
               <span class="price-title" style={{marginTop: "-29%"}}>
                 <small>$</small><span>1.19</span>
               </span>
-              <span class="info" style={{marginTop: "-6%"}}>/ Afbeeldingen</span>
+              <span class="info" style={{marginTop: "-6%"}}>/หลายภาพ</span>
             </div>
           </div>
 
@@ -433,33 +429,33 @@ than here. But remember you get what you pay.</p>
               <strong>5</strong> Domains
             </li>
             <li>
-              <strong>1-100</strong> Afbeeldingen/VOLGORDE
+              <strong>1-100</strong> ภาพ/คำสั่งซื้อ
             </li>
             <li>
-              <strong>10 </strong> Afbeeldingen-VRIJ
+                ฟรี <strong>10 </strong> ภาพ 
             </li>
             <li>
-              <strong>1</strong> MAAND VRIJ OPSLAG
+               ฟรีพื้นที่เก็บข้อมูล <strong>1</strong>เดือน
             </li>
             <li>
-              <strong>24/7</strong> KLANT STEUN
+               ฝ่ายสนับสนุนลูกค้าทุกวันตลอด <strong>24/7</strong> ชั่วโมง
             </li>
           </ul>
           <div class="buy-button-box">
-            <a href="https://app.cutoutwiz.com/" target="_blank" class="buy-now">VOLGORDE NU</a>
+            <a href="https://app.cutoutwiz.com/" target="_blank" class="buy-now">ORDER NOW</a>
           </div>        
         </div>
       </div>
       <div class="column">
         <div class="pricing-card echo">
           <div class="pricing-header">
-            <span class="plan-title">STANDAARD</span>
+            <span class="plan-title">แบบมาตรฐาน</span>
             <div class="price-circle">
-            <span class="info" style={{paddingTop: "22%",fontSize: "14px",color: "black"}}>begint vanaf</span>
+            <span class="info" style={{paddingTop: "22%",fontSize: "14px",color: "black"}}>เริ่มต้นที่</span>
               <span class="price-title" style={{marginTop: "-29%"}}>
                 <small>$</small><span>0.99</span>
               </span>
-              <span class="info" style={{marginTop: "-6%"}}>/ Afbeeldingen</span>
+              <span class="info" style={{marginTop: "-6%"}}>/ หลายภาพ</span>
             </div>
           </div>
 
@@ -468,32 +464,32 @@ than here. But remember you get what you pay.</p>
               <strong>5</strong> Domains
             </li>
             <li>
-              <strong>101-500</strong> Afbeeldingen/VOLGORDE
+              <strong>101-500</strong> ภาพ/คำสั่งซื้อ
             </li>
             <li>
-              <strong>10 </strong> Afbeeldingen-VRIJ
+               ฟรี <strong>10 </strong> ภาพ
             </li>
             <li>
-              <strong>2</strong> MAAND VRIJ OPSLAG
+            ฟรีพื้นที่เก็บข้อมูล <strong>2</strong>เดือน
             </li>
             <li>
-              <strong>24/7</strong> KLANT STEUN
+            ฝ่ายสนับสนุนลูกค้าทุกวันตลอด <strong>24/7</strong> ชั่วโมง
             </li>
           </ul>
           <div class="buy-button-box">
-            <a href="https://app.cutoutwiz.com/"target="_blank" class="buy-now">VOLGORDE NU</a>
+            <a href="https://app.cutoutwiz.com/"target="_blank" class="buy-now">ORDER NOW</a>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="pricing-card pro">
-          <div class="popular">POPULAIR</div>
+          <div class="popular">POPULAR</div>
           <div class="pricing-header">
-            <span class="plan-title">PREMIE</span>
+            <span class="plan-title">แบบพรีเมี่ยม</span>
             <div class="price-circle">
               <span class="price-title">
-               <span style={{fontSize:"21px"}}> <strong>CONTACT </strong></span>
-               <span style={{marginTop:"-5%"}}>ONS</span>
+               <span style={{fontSize:"21px"}}> <strong>ติดต่อ </strong></span><br/>
+               <span style={{marginTop:"-7%"}}>เรา</span>
                 <br/>
                 {/* <span style={{fontSize:"17px"}}> US </span> */}
               </span>
@@ -506,20 +502,20 @@ than here. But remember you get what you pay.</p>
               <strong>10</strong> Domains
             </li>
             <li>
-              <strong>500</strong> ꝏ Afbeeldingen/VOLGORDE
+              <strong>500</strong> ꝏ ภาพ/คำสั่งซื้อ
             </li>
             <li>
-              <strong>10 </strong> Afbeeldingen-VRIJ
+            ฟรี <strong>10 </strong> ภาพ
             </li>
             <li>
-              <strong>3</strong> MAAND VRIJ OPSLAG
+            ฟรีพื้นที่เก็บข้อมูล <strong>2</strong>เดือน
             </li>
             <li>
-              <strong>24/7</strong> KLANT STEUN
+            ฝ่ายสนับสนุนลูกค้าทุกวันตลอด <strong>24/7</strong> ชั่วโมง
             </li>
           </ul>
           <div class="buy-button-box">
-            <Link to="/nl/contact-us" target="_blank" class="buy-now">VOLGORDE NU</Link>
+            <Link to="/contact-us" target="_blank" class="buy-now">ORDER NOW</Link>
           </div>
         </div>
       </div>
@@ -537,25 +533,25 @@ than here. But remember you get what you pay.</p>
 <div style={{backgroundColor:"#f3f5f7"}}>
 <br/><br/>
 <div class="container"id="howitworks">
-    <h1 style={{textAlign:"center"}}>Hoe een bestelling te plaatsen</h1>
+    <h1 style={{textAlign:"center"}}>วิธีการสั่งซื้อ</h1>
 
-    <p style={{textAlign:"center",marginTop:"-1%",fontSize:"20px"}}>Volg gewoon deze eenvoudige stappen, en we zullen het vanaf daar overnemen</p> 
+    <p style={{textAlign:"center",marginTop:"-1%",fontSize:"20px"}}> เพียงทำตามขั้นตอนง่ายๆเหล่านี้ จากนั้นเราจะดำเนินการต่อเอง</p> 
 
     <div class="row">
       <div class="col-md-6" style={{marginTop:"3%"}}>
         <p>
-       <b> Stap 1: </b><br/>
-       Log in om te beginnen <br/>
-          <b> Stap 2: </b><br/>
-          Kies het abonnement van jouw voorkeur<br/>
-          <b> Stap 3: </b><br/>
-          Ga naar je account om een bestelling te plaatsen<br/>
-          <b> Stap 4: </b><br/>
-          Upload de afbeeldingen die u door ons wilt laten bewerken<br/>
-          <b> Stap 5: </b><br/>
-          Wij verwerken de afbeeldingen voor u<br/>
-          <b> Stap 6: </b><br/>
-          Download de bewerkte afbeeldingen
+       <b> ขั้นตอนที่ 1: </b><br/>
+       เข้าสู่ระบบเพื่อเริ่มต้น <br/>
+          <b> ขั้นตอนที่ 2: </b><br/>
+          เลือกแบบแผนสมัครสมาชิกที่คุณต้องการ<br/>
+          <b> ขั้นตอนที่ 3: </b><br/>
+          ไปที่บัญชีของคุณเพื่อทำการสั่งซื้อ<br/>
+          <b> ขั้นตอนที่ 4: </b><br/>
+          อัพโหลดภาพที่คุณต้องการให้เราแก้ไข<br/>
+          <b> ขั้นตอนที่ 5: </b><br/>
+          เราจะประมวลผลภาพให้คุณ<br/>
+          <b> ขั้นตอนที่ 6: </b><br/>
+          ดาวน์โหลดภาพที่ถูกแก้ไขแล้ว
         </p>
       </div>
       <div class="col-md-6">
@@ -572,15 +568,15 @@ than here. But remember you get what you pay.</p>
 <div class="containerback"id="contactus">
   <img src="assets/images/contact_front.jpg" height="350px" width="100%" id="gulabi"alt="People working in customer service"/>
   <div class="centered">
-  <h2>We zijn hier om<br/><span style={{fontWeight:"600"}}>Beantwoord al uw vragen</span><br/></h2>
-  <Link target="_blank" to="/nl/contact-us"><button type="button" id="button17">Neem contact op</button></Link>
+  <h2>เราอยู่ที่นี่เพื่อ<br/><span style={{fontWeight:"600"}}>ตอบทุกคำถามของคุณ</span><br/></h2>
+  <Link to="/contact-us"><button type="button" id="button17">ติดต่อเรา</button></Link>
   </div>
 </div> 
 
 <div style={{marginBottom:"4%"}}>
-    <h1 style={{textAlign:"center",marginTop:"4%"}}>Ons verhaal</h1>
+    <h1 style={{textAlign:"center",marginTop:"4%"}}>เรื่องราวของเรา</h1>
 
-<p style={{textAlign:"center",marginTop:"-0.5%",fontSize:"20px"}}>Wie we zijn en hoe we zijn geworden</p> 
+<p style={{textAlign:"center",marginTop:"-0.5%",fontSize:"20px"}}>เราคือใครและมีความเป็นมาอย่างไร</p> 
 
 
 <div class="container"style={{marginTop:"2%"}}>
@@ -590,30 +586,20 @@ than here. But remember you get what you pay.</p>
       </div>
       <div class="col-md-6" >
 
-        <h2>Hoe wij u helpen<br/>
-        Bereik uw bedrijf<br/>
-        Doelen</h2>
+        <h2>เราช่วยคุณได้อย่างไร<br/>
+        บรรลุธุรกิจของคุณ <br/>
+        เป้าหมาย</h2>
 
 <hr id="border5"></hr>
 
 
-<p style={{textAlign:"justify"}}>CutOutWiz is een van de toonaangevende beeld- en videobewerkingen
-    bedrijf voor bedrijven over de hele wereld. Terwijl de wereld beweegt
-     op weg naar een virtuele toekomst, waarbij online productfotobewerking steeds meer wordt
-      steeds toegankelijker, HD-productfoto's zijn in wezen wat
-       verkoop stimuleren. Wij zijn de vertrouwde online beeldbewerkingspartner voor
-        veel gerenommeerde e-commercebedrijven over de hele wereld over een
-         divers scala aan industrieën. Wij bieden alle mogelijke beeldbewerking aan
-          (verwerkings)dienst van veelgebruikte diensten zoals:
-           achtergrondafbeelding verwijderen, kleurcorrectie, beeldretouchering,
-            onzichtbare paspop, tot zelfs complexe diensten zoals beeld
-             manipulatie. De reden achter ons succes is dat we geloven in
-              klant eerst en het verstrekken van de beste kwaliteitsdienst.</p>
+<p style={{textAlign:"justify"}}>CutOutWiz เป็นหนึ่งในบริษัทตัดต่อรูปภาพและวิดีโอชั้นนำสำหรับธุรกิจทั่วโลก ในขณะที่โลกกำลังเคลื่อนไปสู่อนาคตเสมือนจริง การตัดต่อรูปภาพผลิตภัณฑ์ออนไลน์จึงสามารถข้าถึงได้มากขึ้นเรื่อยๆ รูปภาพผลิตภัณฑ์แบบ HD จึงเป็นสิ่งที่กระตุ้นยอดขาย เราเป็นพาร์ทเนอร์ให้กับบริษัทอีคอมเมิร์ซที่มีชื่อเสียงหลายแห่งทั่วโลกในหลากหลายอุตสาหกรรมสำหรับการตัดต่อภาพออนไลน์ที่มีความน่าเชื่อถือ เราให้บริการปรับแต่ง(ประมวลผล) ทุกภาพตั้งแต่บริการที่เป็นที่นิยมทั่วไป เช่น การลบภาพพื้นหลัง การแก้ไขสี การรีทัชภาพ หุ่นจำลองล่องหน ไปจนถึงบริการที่มีความซับซ้อน เช่น การปรับองค์ประกอบต่างๆในภาพ เหตุผลเบื้องหลังความสำเร็จของเราคือเราเชื่อมั่นในลูกค้าเป็นอันดับแรกและให้บริการที่มีคุณภาพดีที่สุด</p>
      
       </div>
     </div>
     </div>
 </div>
+
 
 <div class="footer"style={{backgroundColor:"#231f20"}}>
     <div class="container">
@@ -621,7 +607,7 @@ than here. But remember you get what you pay.</p>
     <div class="col-md-3"style={{marginTop:"4%"}}>
     <Link to="/" target="_blank"><img src="assets/images/ailogo.png"style={{marginTop:"3%"}} width="170" height="40" alt=""/></Link>
 
-    <p style={{textAlign:"justify",color:"#b7b9bb",marginTop:"4%"}}>CutOutWiz is een van de toonaangevende bedrijven voor beeld- en videobewerking voor bedrijven over de hele wereld.</p>
+    <p style={{textAlign:"justify",color:"#b7b9bb",marginTop:"4%"}}>CutOutWiz เป็นหนึ่งในบริษัทตัดต่อรูปภาพและวิดีโอชั้นนำสำหรับธุรกิจต่างๆ ทั่วโลก.</p>
     <a href="https://www.facebook.com/cutoutwiz"target="_blank" class="fa fa-facebook"></a>
     <a href="https://twitter.com/cut_wiz?s=09"target="_blank" class="fa fa-twitter"></a>
     <a href="https://www.linkedin.com/company/cutoutwiz-ltd"target="_blank" class="fa fa-linkedin"></a>
@@ -630,19 +616,19 @@ than here. But remember you get what you pay.</p>
     </div>
    
         <div class="col-6 col-md-2"style={{marginTop:"5%"}}>
-            <b style={{color:"white",fontSize:"20px"}}>Menu</b>
+            <b style={{color:"white",fontSize:"20px"}}>เมนู</b>
 
             <p style={{color:"#b7b9bb",marginTop:"8%"}}>
-         <Link to="/" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}> Thuis</Link> <br/>
-         <Link to="#apps" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}> Functies</Link><br/>
-         <Link to="#images" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}>  Diensten</Link><br/>
-         <Link to="#prices" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}>  Prijzen</Link><br/>
-         <Link to="#blogs" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}> Blogs</Link>
+         <Link to="/" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}> หน้าแรก</Link> <br/>
+         <Link to="#apps" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}> คุณสมบัติ</Link><br/>
+         <Link to="#images" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}>  บริการต่างๆ</Link><br/>
+         <Link to="#prices" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}>  การตั้งราคา</Link><br/>
+         <Link to="#blogs" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}> บล็อก</Link>
             </p>
         </div>
 
         <div class="col-6 col-md-2"style={{marginTop:"5%"}}>
-        <b style={{color:"white",fontSize:"20px"}}>Functies</b>
+        <b style={{color:"white",fontSize:"20px"}}>คุณสมบัติ</b>
             <p style={{color:"white",marginTop:"8%"}}>
             <a href="https://apps.shopify.com/cutoutwiz" target="_blank"  style={{textDecoration:"none",color:"#b7b9bb"}}>Shoppify App</a> <br/>
             <a href="https://sellercentral.amazon.com/gspn/provider-details/Imaging/284b7303-cec9-403e-b763-375399824520?ref_=sc_gspn_ilst_idt-284b7303&localeSelection=en_US&sellFrom=US&sellIn=US" target="_blank" style={{textDecoration:"none",color:"#b7b9bb"}}> AmazonSPN </a><br/>
@@ -653,19 +639,19 @@ than here. But remember you get what you pay.</p>
         </div>
 
         <div class="col-6 col-md-2"style={{marginTop:"5%"}}>
-        <b style={{color:"white",fontSize:"20px"}}>Handige Links</b>
+        <b style={{color:"white",fontSize:"20px"}}>ลิงค์ที่เป็นประโยชน์</b>
 
           <p style={{color:"white",marginTop:"8%"}}>
-         <Link to="/privacy-policy" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}> Privacy Beleid </Link> <br/>
-         <Link to="/terms-and-conditions" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}> Regels en Voorwaarden</Link><br/>
-         <Link to="/nl/contact-us" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}>Neem contact op</Link> <br/>
-          <a href="https://app.cutoutwiz.com/" target="_blank" style={{textDecoration:"none",color:"#b7b9bb"}}>Aanmelden</a> <br/>
+         <Link to="/privacy-policy" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}>นโยบายความเป็นส่วนตัว </Link> <br/>
+         <Link to="/terms-and-conditions" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}> ข้อกำหนดและเงื่อนไข</Link><br/>
+         <Link to="/contact-us" target="_blank"style={{textDecoration:"none",color:"#b7b9bb"}}>ติดต่อเรา</Link> <br/>
+          <a href="https://app.cutoutwiz.com/" target="_blank" style={{textDecoration:"none",color:"#b7b9bb"}}>สมัคร</a> <br/>
           </p>
         </div>     
   
 
       <div class="col-6 col-md-3"style={{marginTop:"5%"}}>
-      <b style={{color:"white",fontSize:"20px"}}>Ons adres</b> <br/>   <br/>
+      <b style={{color:"white",fontSize:"20px"}}>ที่อยู่ของเรา</b> <br/>   <br/>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
       width="70%" height="50%" style={{border:"0"}} allowfullscreen="" loading="lazy"></iframe>
 
@@ -673,12 +659,9 @@ than here. But remember you get what you pay.</p>
       
       </div> 
     </div>
-    <p style={{textAlign:"center",color:"white",padding:"8px",backgroundColor:"black"}}>Ontworpen en ontwikkeld door <Link to="/" target="_blank"  style={{textDecoration:"none",color:"white"}}>CutOutWiz</Link></p>
+    <p style={{textAlign:"center",color:"white",padding:"8px",backgroundColor:"black"}}>ออกแบบและพัฒนาโดย <Link to="/" target="_blank"  style={{textDecoration:"none",color:"white"}}>CutOutWiz</Link></p>
     
   </div>
-
-
-
 
    </div>
    
@@ -694,4 +677,4 @@ than here. But remember you get what you pay.</p>
 //   dragLine.style.left = sliderVal + "%";
 //   img.style.width = sliderVal + "%";
 //}
-export default Netherland;
+export default Thai;

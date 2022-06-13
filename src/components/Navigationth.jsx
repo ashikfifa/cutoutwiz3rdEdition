@@ -2,19 +2,23 @@ import React from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link, withRouter } from "react-router-dom";
 
-function Navigationne(props) {
+function Navigation(props) {
+
   function refreshPage(){
-    window.location.reload();
+    window.location.reload('/');
 }
   return (
 
+
     <Navbar collapseOnSelect sticky='top' expand='sm' bg='dark' variant='dark'>
     <Container>
+
     <div class="" onClick={refreshPage}>
-    <Link class="navbar-brand" to="/nl">
+    <Link class="navbar-brand" to="/th">
       <img src="../../assets/images/ailogo.png" width="170" height="40" alt=""/>
     </Link>
     </div>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -31,11 +35,11 @@ function Navigationne(props) {
         <div class="mx-auto"></div>
         <ul class="navbar-nav">
         <li class="nav-item active" onClick={refreshPage}>
-                <Link class="nav-link" to="/nl">
-                HOME
+                <Link class="nav-link"  to="/th">
+                หน้าแรก
                   <span class="sr-only">(current)</span>
                 </Link>
-              </li>
+        </li>
 
 
               {/* <li class="nav-item">
@@ -46,57 +50,44 @@ function Navigationne(props) {
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          SERVICE
+           บริการ
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="/nl#images">BEELD</a></li>
-            <li><a class="dropdown-item" href="/nl#videos">VIDEOS</a></li>
+            <li><a class="dropdown-item" href="/th#images">รูปภาพ</a></li>
+            <li><a class="dropdown-item" href="/th#videos">วิดีโอ</a></li>
           </ul>
         </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/nl#apps">
-                  APPS
+                <a class="nav-link" href="/th#apps">
+                  แอพ
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/nl#prices">
-                PRIJS
+                <a class="nav-link" href="/th#prices">
+                 ราคา
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/nl#howitworks">
-                HOE HET WERKT
+                <a class="nav-link" href="/th#howitworks">
+                มันทำงานอย่างไร
                 </a>
               </li>
 
-              {/* <li class="nav-item">
-                <a class="nav-link" href="/#blogs">
-                  BLOGS
-                </a>
-              </li> */}
-              
-              {/* <li class="nav-item">
-                <a class="nav-link" href="#contactus">
-                  
-                  CONTACT
-                </a>
-              </li> */}
-
               <li class="nav-item">
-              <Link class="nav-link" target="_blank" to="/nl/contact-us">
-                  CONTACT
+              <Link class="nav-link" target="_blank" to="/th/contact-us">
+              ติดต่อ
                 </Link>
               </li>
 
+             
               <li class="nav-item">
                 <a class="nav-link" href="https://app.cutoutwiz.com/"target="_blank"><button id="button9">
-                MELD JE AAN</button>
+                สมัคร</button>
                 </a>
               </li>
-             
 
         </ul>
       </div>
@@ -106,4 +97,4 @@ function Navigationne(props) {
   );
 }
 
-export default withRouter(Navigationne);
+export default withRouter(Navigation);

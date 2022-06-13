@@ -3,6 +3,7 @@ export { default as Navigationfr } from "./Navigationfr";
 export { default as Navigationes } from "./Navigationes";
 export { default as Navigationge } from "./Navigationge";
 export { default as Navigationne } from "./Navigationne";
+export { default as Navigationth } from "./Navigationth";
 export { default as Footer } from "./Footer";
 export { default as Home } from "./Home";
 export { default as Contact } from "./Contact";
