@@ -123,6 +123,14 @@ function Navigation(props) {
                 </Link>
               </li>
 
+             
+
+              <li class="nav-item">
+              <Link class="nav-link" target="_blank" to="./th">
+              <img src="../../assets/images/thailand-flag.png" width="20" height="13.5" alt=""/>
+                </Link>
+              </li>
+
               <li class="nav-item">
               <Link class="nav-link" target="_blank" to="./de">
               <img src="../../assets/images/germany-flag.png" width="20" height="20" alt=""/>
