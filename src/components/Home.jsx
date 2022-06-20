@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 // import React from "react";
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import BeforeAfterSlider from 'react-before-after-slider';
 import { Link } from 'react-router-dom';
 import {Helmet} from "react-helmet";
@@ -14,34 +14,58 @@ import Slider from "react-slick";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Typical from 'react-typical';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation} from "./";
+import { Navigation} from ".";
+const $ = window.$;
 
- function Home(props) {
 
+
+function Home(props)  {
+
+  // window.location.href = "http://localhost:3000/fr";
+
+ 
+  function ipLookUp () {
+    $.ajax('http://ip-api.com/json')
+    .then(
+        function success(response) {
+            console.log('User\'s Location Data is ', response);
+            console.log('User\'s Country', response.country);
+            // if(response.country=='United States'){
+            //   window.location.href = "http://localhost:3000/fr";
+            // }
+            if(response.country=='France'){
+              window.location.href = "https://cutoutwiz.com/fr";
+            }
+            else if(response.country=='Spain'){
+              window.location.href = "https://cutoutwiz.com/es";
+            }
+            else if(response.country=='Germany'){
+              window.location.href = "https://cutoutwiz.com/de";
+            }
+            else if(response.country=='Netherland'){
+              window.location.href = "https://cutoutwiz.com/nl";
+            }
+            else if(response.country=='Thailand'){
+              window.location.href = "https://cutoutwiz.com/th";
+            }
+            // else if(response.country=='Bangladesh'){
+            //   window.location.href = "http://localhost:3000/th";
+            // }
+        },
   
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
+        function fail(data, status) {
+            console.log('Request failed.  Returned status of',
+                        status);
+        }
+        
+    );
 
-    responsive: [{
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 1
-      }
-    }]
-
-    
-  };
-
+   
+  }
   
+  
+
+
   return (
     
     <div className="home">
@@ -92,6 +116,8 @@ content post production solution</p>
           </div>
         </div>
       </div>
+
+    <div>{ipLookUp()}</div>
 
 
 <div style={{backgroundColor:"#ffdd0b"}}>
@@ -336,7 +362,7 @@ content post production solution</p>
 <div class="container"id="overflow">
 {/* <div class="container"id="overflow"> */}
        
-        <Slider {...settings}>
+        <Slider>
           <div class="card"id="" style={{width: "8rem",borderRadius:"10px"}}>
               <img src="assets/images/quote (1).png" class="rounded mx-auto d-block"  width="70" height="50" alt=""style={{marginTop:"11%"}}/><br/>
               <div class="card-body">
@@ -784,7 +810,7 @@ Goals</h2>
    
 
   );
-}
+ }
 
 // const slider = document.querySelector(".slider input");
 // const img = document.querySelector(".images .img-2");
