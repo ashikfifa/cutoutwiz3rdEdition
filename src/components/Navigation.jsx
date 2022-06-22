@@ -7,6 +7,26 @@ function Navigation(props) {
   function refreshPage(){
     window.location.reload('/');
 }
+
+function refreshPagees(){
+  window.location.href="./es";
+}
+
+function refreshPagefr(){
+  window.location.href="./fr";
+}
+
+function refreshPagenl(){
+  window.location.href="./nl";
+}
+
+function refreshPageth(){
+  window.location.href="./th";
+}
+
+function refreshPagede(){
+  window.location.href="./de";
+}
   return (
 
 
@@ -104,7 +124,7 @@ function Navigation(props) {
              
 
               <li class="nav-item">
-              <Link class="nav-link" target="_blank" to="./es">
+              <Link class="nav-link"onClick={refreshPagees}>
                    <img src="../../assets/images/spain-flag.png" width="20" height="20" alt=""/>
                 </Link>
               </li>
@@ -112,13 +132,13 @@ function Navigation(props) {
               
 
               <li class="nav-item">
-              <Link class="nav-link" target="_blank" to="./fr">
+              <Link class="nav-link"  to="./fr"onClick={refreshPagefr}>
               <img src="../../assets/images/france-flag.png" width="20" height="20" alt=""/>
                 </Link>
               </li>
 
               <li class="nav-item">
-              <Link class="nav-link" target="_blank" to="./nl">
+              <Link class="nav-link" to="./nl"onClick={refreshPagenl}>
               <img src="../../assets/images/netherland-flag.png" width="20" height="20" alt=""/>
                 </Link>
               </li>
@@ -126,13 +146,13 @@ function Navigation(props) {
              
 
               <li class="nav-item">
-              <Link class="nav-link" target="_blank" to="./th">
+              <Link class="nav-link" to="./th"onClick={refreshPageth}>
               <img src="../../assets/images/thailand-flag.png" width="20" height="13.5" alt=""/>
                 </Link>
               </li>
 
               <li class="nav-item">
-              <Link class="nav-link" target="_blank" to="./de">
+              <Link class="nav-link" to="./de"onClick={refreshPagede}>
               <img src="../../assets/images/germany-flag.png" width="20" height="20" alt=""/>
                 </Link>
               </li>

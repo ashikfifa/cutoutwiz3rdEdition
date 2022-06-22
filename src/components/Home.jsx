@@ -20,49 +20,133 @@ const $ = window.$;
 
 
 function Home(props)  {
+  // window.location.href = "http://localhost:3000/fr";ceae0f9fbb24a7f45f12d479595194fc
 
-  // window.location.href = "http://localhost:3000/fr";
+//   var endpoint = 'https://ip-api.io/json?api_key={ceae0f9fbb24a7f45f12d479595194fc}';
+
+// var xhr = new XMLHttpRequest();
+// xhr.onreadystatechange = function() {
+// 	if (this.readyState == 4 && this.status == 200) {
+// 		var response = JSON.parse(this.responseText);
+// 		if(response.status !== 'success') {
+// 			console.log('query failed: ' + response.message);
+// 			return
+// 		}
+// 		// Redirect
+// 		if(response.countryCode == "US") {
+// 			window.location.replace("https://google.com/");
+// 		}
+//     if(response.countryCode == "France") {
+// 			window.location.replace("https://cutoutwiz.com/fr");
+// 		}
+//     if(response.countryCode == "Spain") {
+// 			window.location.replace("https://cutoutwiz.com/es");
+// 		}
+//     if(response.countryCode == "Germany") {
+// 			window.location.replace("https://cutoutwiz.com/de");
+// 		}
+//     if(response.countryCode == "Netherland") {
+// 			window.location.replace("https://cutoutwiz.com/nl");
+// 		}
+//     if(response.countryCode == "Thailand") {
+// 			window.location.replace("https://cutoutwiz.com/th");
+// 		}
+// 	}
+// };
+// xhr.open('GET', endpoint, true);
+// xhr.send();
+
+$.ajax({
+  type: "GET",
+  dataType: "json",
+  url: 'https://ip-api.io/json?api_key=ceae0f9fbb24a7f45f12d479595194fc',
+  success: function(data) {
+    console.log(
+      'Your ip address is ' + data.ip
+        + ' city: ' + data.city
+        + ' region: ' + data.region_name
+        + ' country: ' + data.country_name
+    );
+    if(data.country_name=='France'){
+      window.location.href = "https://cutoutwiz.com/fr";
+    }
+    else if(data.country_name=='Spain'){
+      window.location.href = "https://cutoutwiz.com/es";
+    }
+    else if(data.country_name=='Germany'){
+      window.location.href = "https://cutoutwiz.com/de";
+    }
+    else if(data.country_name=='Netherland'){
+      window.location.href = "https://cutoutwiz.com/nl";
+    }
+    else if(data.country_name=='Thailand'){
+      window.location.href = "https://cutoutwiz.com/th";
+    }
+    else if(data.country_name=='United States'){
+      window.location.href = "https://cutoutwiz.com/nl";
+    }
+    
+  }
+});
 
  
-  function ipLookUp () {
-    $.ajax('http://ip-api.com/json')
-    .then(
-        function success(response) {
-            console.log('User\'s Location Data is ', response);
-            console.log('User\'s Country', response.country);
-            // if(response.country=='United States'){
-            //   window.location.href = "http://localhost:3000/fr";
-            // }
-            if(response.country=='France'){
-              window.location.href = "https://cutoutwiz.com/fr";
-            }
-            else if(response.country=='Spain'){
-              window.location.href = "https://cutoutwiz.com/es";
-            }
-            else if(response.country=='Germany'){
-              window.location.href = "https://cutoutwiz.com/de";
-            }
-            else if(response.country=='Netherland'){
-              window.location.href = "https://cutoutwiz.com/nl";
-            }
-            else if(response.country=='Thailand'){
-              window.location.href = "https://cutoutwiz.com/th";
-            }
-            // else if(response.country=='Bangladesh'){
-            //   window.location.href = "http://localhost:3000/th";
-            // }
-        },
+  // function ipLookUp () {
+  //   $.ajax('http://ip-api.com/json')
+  //   .then(
+  //       function success(response) {
+  //           console.log('User\'s Location Data is ', response);
+  //           console.log('User\'s Country', response.country);
+  //           // if(response.country=='United States'){
+  //           //   window.location.href = "http://localhost:3000/fr";
+  //           // }
+  //           if(response.country=='France'){
+  //             window.location.href = "https://cutoutwiz.com/fr";
+  //           }
+  //           else if(response.country=='Spain'){
+  //             window.location.href = "https://cutoutwiz.com/es";
+  //           }
+  //           else if(response.country=='Germany'){
+  //             window.location.href = "https://cutoutwiz.com/de";
+  //           }
+  //           else if(response.country=='Netherland'){
+  //             window.location.href = "https://cutoutwiz.com/nl";
+  //           }
+  //           else if(response.country=='Thailand'){
+  //             window.location.href = "https://cutoutwiz.com/th";
+  //           }
+  //           else if(response.country=='Bangladesh'){
+  //             window.location.href = "http://localhost:3000/th";
+  //           }
+  //       },
   
-        function fail(data, status) {
-            console.log('Request failed.  Returned status of',
-                        status);
-        }
+  //       function fail(data, status) {
+  //           console.log('Request failed.  Returned status of',
+  //                       status);
+  //       }
         
-    );
+  //   );
 
-   
-  }
+  // }
   
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1
+      }
+    }]
+  };
   
 
 
@@ -117,7 +201,7 @@ content post production solution</p>
         </div>
       </div>
 
-    <div>{ipLookUp()}</div>
+    {/* <div>{ipLookUp()}</div> */}
 
 
 <div style={{backgroundColor:"#ffdd0b"}}>
@@ -362,7 +446,7 @@ content post production solution</p>
 <div class="container"id="overflow">
 {/* <div class="container"id="overflow"> */}
        
-        <Slider>
+        <Slider {...settings}>
           <div class="card"id="" style={{width: "8rem",borderRadius:"10px"}}>
               <img src="assets/images/quote (1).png" class="rounded mx-auto d-block"  width="70" height="50" alt=""style={{marginTop:"11%"}}/><br/>
               <div class="card-body">

@@ -51,7 +51,7 @@ return (
 </div>
 
 <div className="col-8 form-group pt-2 mx-auto" hidden>
-<textarea cols="30" rows="3" type="number" className="form-control" name="uniqueid" id="hello"/>
+<textarea cols="30" rows="3" type="number" className="form-control" name="uniqueid" id="hellofr"/>
 </div>
 
 <div className="col-8 pt-3 mx-auto">
@@ -93,7 +93,7 @@ function randomDate( end) {
   }
   
   function whatis(){
-      document.getElementById('hello').innerHTML = p;
+      document.getElementById('hellofr').innerHTML = p;
       }
   $( document ).ready(function() {
       whatis();

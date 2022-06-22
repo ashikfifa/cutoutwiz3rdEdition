@@ -9,6 +9,7 @@ const $ = window.$;
 // import {Heading, FirstName, LastName, Email, Message, SubmitButton} from 'customisable-contact-form'
 export default function Contact() {
    
+
 return (
 
 <div className="containe">
@@ -77,8 +78,8 @@ return (
 
 
 );
-
 }
+
 function randomDate( end) {
     return new Number(end + Math.random());
 }

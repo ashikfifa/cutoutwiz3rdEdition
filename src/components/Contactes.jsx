@@ -52,7 +52,7 @@ return (
 </div>
 
 <div className="col-8 form-group pt-2 mx-auto" hidden>
-<textarea cols="30" rows="3" type="number" className="form-control" name="uniqueid" id="hello"/>
+<textarea cols="30" rows="3" type="number" className="form-control" name="uniqueid" id="helloes"/>
 </div>
 
 
@@ -95,7 +95,7 @@ function sendEmail(e) {
 }
 
 function whatis(){
-    document.getElementById('hello').innerHTML = p;
+    document.getElementById('helloes').innerHTML = p;
     }
 $( document ).ready(function() {
     whatis();
