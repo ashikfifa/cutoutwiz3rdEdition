@@ -70,20 +70,17 @@ $.ajax({
     if(data.country_name=='France'){
       window.location.href = "https://cutoutwiz.com/fr";
     }
-    else if(data.country_name=='Spain'){
+    if(data.country_name=='Spain'){
       window.location.href = "https://cutoutwiz.com/es";
     }
-    else if(data.country_name=='Germany'){
+    if(data.country_name=='Germany'){
       window.location.href = "https://cutoutwiz.com/de";
     }
-    else if(data.country_name=='Netherland'){
+    if(data.country_name=='Netherlands'){
       window.location.href = "https://cutoutwiz.com/nl";
     }
-    else if(data.country_name=='Thailand'){
+    if(data.country_name=='Thailand'){
       window.location.href = "https://cutoutwiz.com/th";
-    }
-    else if(data.country_name=='United States'){
-      window.location.href = "https://cutoutwiz.com/nl";
     }
     
   }
